@@ -9,7 +9,7 @@ B -->|Histórico OK| C{Motivo da Solicitação?}:::decision
 B -->|Excedeu limite / Flag anterior| Z["Negar troca<br/>Informar política de uso"]:::deny
 
 %% RAMO BANIMENTO WHATSAPP
-C -->|Banimento WhatsApp| D[Informar cliente sobre banimento]:::process
+C -->|Banimento WhatsApp| D["Informar cliente sobre banimento"]:::process
 
 D --> D1["Orientar acesso ao suporte oficial da Meta:<br/>faq.whatsapp.com<br/>via link ou QR Code"]:::info
 D1 --> D2["Esclarecer que a Meta pode vincular banimentos<br/>a IMEI, dispositivo ou comportamento"]:::info
@@ -20,25 +20,25 @@ E -->|Sim| Z
 E -->|Não| F["Aprovar 1 troca anual<br/>por banimento WhatsApp*"]:::approve
 
 %% RAMO TROCA DDD
-C -->|Troca de DDD| G[Solicitar documentos]:::process
+C -->|Troca de DDD| G["Solicitar documentos"]:::process
 G --> G1["Documento pessoal + comprovante de residência<br/>(ex: conta de luz, aluguel, contrato)"]:::info
 
-G1 --> H{Documentação válida?}:::decision
+G1 --> H{"Documentação válida?"}:::decision
 H -->|Sim| F
 H -->|Não| Z
 
 %% NOVO RAMO - AMEAÇAS E LIGAÇÕES INDESEJADAS
-C -->|Recebendo ameaças<br/>e ligações indesejadas| P[Solicitar Boletim de Ocorrência (BO)]:::process
+C -->|Recebendo ameaças<br/>e ligações indesejadas| P["Solicitar Boletim de Ocorrência (BO)"]:::process
 
-P --> Q{BO apresentado?}:::decision
+P --> Q{"BO apresentado?"}:::decision
 Q -->|Sim| F
 Q -->|Não| R["Negar troca<br/>Orientar abertura de BO"]:::deny
 R --> O
 
 %% DEMAIS MOTIVOS
-C -->|Demais motivos| I[Analisar motivo informado]:::process
+C -->|Demais motivos| I["Analisar motivo informado"]:::process
 
-I --> J{Motivo comprovado?}:::decision
+I --> J{"Motivo comprovado?"}:::decision
 J -->|Documento válido| F
 J -->|Suspeita de abuso| Z
 J -->|Informação insuficiente| K["Solicitar mais informações<br/>ao cliente"]:::loop
@@ -46,12 +46,12 @@ J -->|Informação insuficiente| K["Solicitar mais informações<br/>ao cliente"
 K --> I
 
 %% CASOS ESPECÍFICOS
-I -->|Caso específico / exceção| L[Protocolar atendimento]:::process
-L --> M[Encaminhar para Suporte Nível 2 – Redes]:::escalation
+I -->|Caso específico / exceção| L["Protocolar atendimento"]:::process
+L --> M["Encaminhar para Suporte Nível 2 – Redes"]:::escalation
 
 %% FINAL
-F --> N([Executar troca de número]):::endNode
-Z --> O([Encerrar atendimento]):::endNode
+F --> N(["Executar troca de número"]):::endNode
+Z --> O(["Encerrar atendimento"]):::endNode
 
 %% ESTILOS
 classDef start fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px
