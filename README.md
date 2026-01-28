@@ -1,124 +1,102 @@
-# Fluxograma-Troca-de-numero.md
-# Fluxograma de Controle de Troca de Número
+Fluxograma de Controle de Troca de Número
+Objetivo
 
-## 📌 Objetivo do Fluxograma
+Este fluxograma define um processo padronizado para solicitação e análise de troca de número, com foco em controle, rastreabilidade e uso responsável da numeração.
 
-Este fluxograma foi criado com o **objetivo de controlar, organizar e padronizar** as solicitações de troca de número, **não de proibir trocas**.
+O objetivo não é impedir trocas, mas garantir que elas ocorram de forma justa, criteriosa e sustentável, considerando a escassez de ranges numéricos, custos operacionais e histórico de uso.
 
-A troca de número continua sendo um direito do cliente, porém, devido à **escassez de ranges numéricos**, **custos operacionais** e **uso indevido recorrente**, tornou-se necessário estabelecer um **processo claro, rastreável e justo**, tanto para o cliente quanto para a operadora.
+Princípios
 
-Este fluxo visa:
-- Garantir **tratamento igualitário** entre os clientes  
-- Evitar **abusos recorrentes** de troca  
-- Proteger os recursos da operadora  
-- Dar **segurança operacional** ao time de suporte  
+O processo foi desenhado com base nos seguintes critérios:
 
----
+Trocas não devem ser negadas de forma arbitrária
 
-## 🧭 Princípios do Processo
+Exceções podem ser aplicadas quando devidamente justificadas
 
-O fluxo foi desenhado com base nos seguintes princípios:
+O cliente deve receber orientação clara e transparente
 
-- ✅ **Não bloquear trocas de forma arbitrária**
-- ✅ **Permitir exceções quando devidamente justificadas**
-- ✅ **Priorizar orientação e transparência ao cliente**
-- ✅ **Escalar casos sensíveis para análise técnica**
-- ❌ **Evitar trocas automáticas sem análise**
-- ❌ **Evitar desperdício de numeração**
+Casos sensíveis devem ser analisados tecnicamente
 
----
+Trocas automáticas sem análise devem ser evitadas
 
-## 🔍 Visão Geral do Fluxo
+Visão Geral do Processo
 
-O atendimento sempre se inicia com a **consulta do histórico do cliente**, utilizando CPF ou cadastro, permitindo identificar:
+Todo atendimento inicia com a consulta do histórico do cliente (CPF ou cadastro), permitindo verificar:
 
-- Quantidade de trocas anteriores  
-- Trocas recentes (últimos 12 meses)  
-- Flags de abuso ou restrições já registradas  
+Quantidade de trocas anteriores
 
-Esse passo é essencial para **decisões consistentes** e evita que o atendimento seja baseado apenas em percepção individual do atendente.
+Ocorrências nos últimos 12 meses
 
----
+Flags de abuso ou restrições registradas
 
-## 📲 Banimento no WhatsApp
+Essa etapa garante decisões consistentes e auditáveis, reduzindo subjetividade no atendimento.
 
-Nos casos de **banimento do WhatsApp**, o fluxo prioriza **orientação correta ao cliente**, deixando claro que:
+Banimento no WhatsApp
 
-- O WhatsApp é um serviço da **Meta**, não da operadora  
-- A Meta pode aplicar banimentos vinculados a:
-  - IMEI
-  - Dispositivo
-  - Comportamento de uso
-- A troca de número **não garante** o fim do banimento  
+Nos casos de banimento do WhatsApp, o fluxo deixa claro que:
 
-O cliente é orientado a acessar o **suporte oficial da Meta** (`faq.whatsapp.com`) antes ou durante o processo.
+O serviço é de responsabilidade da Meta
 
-### 🔁 Limite de Troca
-- É permitida **1 troca por ano** para casos de banimento
-- Caso o limite já tenha sido utilizado, a solicitação é negada de forma justificada e transparente
+Banimentos podem estar associados a IMEI, dispositivo ou comportamento
 
----
+A troca de número não garante a remoção do banimento
 
-## 🌍 Troca de DDD
+O cliente deve ser orientado a acessar o suporte oficial da Meta (faq.whatsapp.com).
 
-A troca de DDD é tratada como um caso sensível, pois historicamente pode gerar **fraudes ou uso indevido**.
+Limite
 
-Por isso, o fluxo exige:
-- Documento pessoal
-- **Comprovante de residência ou mudança**
+Permitida 1 troca por ano para casos de banimento
 
-Sem documentação válida, a troca é negada para proteção do processo.
+Excedido o limite, a solicitação é negada com base na política definida
 
----
+Troca de DDD
 
-## 📄 Demais Motivos de Troca
+A troca de DDD exige validação adicional para evitar fraudes:
 
-Para outros motivos (ex.: importunação, erro de divulgação, questões pessoais), o fluxo prevê:
+Documento pessoal
 
-- Análise individual do motivo
-- Aprovação mediante comprovação
-- Solicitação de mais informações quando necessário  
+Comprovante de residência ou mudança
 
-Caso haja **suspeita de abuso**, a troca pode ser negada com base em política interna.
+Sem documentação válida, a solicitação é negada.
 
----
+Demais Motivos
 
-## 🧑‍💻 Casos Específicos e Exceções
+Outros motivos de troca são avaliados individualmente:
 
-Nem todo cenário cabe em um fluxo automático.
+Aprovação mediante comprovação
 
-Por isso, casos considerados:
-- Excepcionais
-- Sensíveis
-- Fora do padrão  
+Solicitação de informações adicionais quando necessário
 
-Devem ser:
-1. **Protocolados**
-2. **Encaminhados ao Suporte Nível 2 – Redes**
-3. Avaliados tecnicamente antes de qualquer decisão final
+Negativa em casos de suspeita de abuso
 
-Esse ponto garante **flexibilidade sem perder controle**.
+Casos Específicos e Exceções
 
----
+Cenários fora do padrão devem ser:
 
-## ✅ Resultados Esperados
+Protocolados
 
-Com a aplicação deste fluxo, espera-se:
+Encaminhados ao Suporte Nível 2 – Redes
 
-- 📉 Redução de trocas desnecessárias  
-- 📊 Melhor rastreabilidade das decisões  
-- 🤝 Atendimento mais transparente ao cliente  
-- 🧠 Menos decisões subjetivas no suporte  
-- 🔐 Maior controle sobre recursos numéricos  
+Avaliados tecnicamente antes da decisão final
 
----
+Esse mecanismo garante flexibilidade sem perda de controle.
 
-## 📎 Observação Final
+Resultados Esperados
 
-Este fluxograma **não tem caráter punitivo**.
+Redução de trocas desnecessárias
 
-Ele existe para:
-> **Organizar o processo, proteger recursos escassos e garantir que cada troca de número seja feita com critério, clareza e responsabilidade.**
+Maior rastreabilidade das decisões
 
-Sugestões de melhoria, ajustes de política e novos cenários devem ser tratados como **evolução natural do fluxo**, mantendo sempre o foco no equilíbrio entre **experiência do cliente** e **sustentabilidade operacional**.
+Atendimento mais transparente
+
+Menor subjetividade no suporte
+
+Melhor controle sobre recursos numéricos
+
+Observação Final
+
+Este fluxo tem caráter operacional e preventivo, não punitivo.
+Ele deve evoluir conforme novas demandas, mantendo o equilíbrio entre experiência do cliente e sustentabilidade operacional.
+
+Copyright (c) 2026 Maicon Cubero de Jesus
 
